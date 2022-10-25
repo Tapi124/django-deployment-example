@@ -1,0 +1,26 @@
+<!-- before video 143 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Index</h1>
+
+  </body>
+</html> -->
+
+<!-- video 143 Template inheritance -->
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to INDEX!</h1>
+    <h2>This is index.html page showing!</h2>
+    <h1>{{ text }}</h1>
+    <h1>{{ number}}</h1>
+    <h1>{{ text | upper}}</h1>
+    <h1>{{ text | cut:"hello" }}</h1>
+    <h1>{{ number | add:"99" }}</h1>
+    {% endblock %}
